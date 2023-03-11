@@ -6,7 +6,7 @@
 
 ### Links
 
-- Live Site URL: [https://tip-calculator-10.netlify.app/]
+- Live Site URL: [https://tip-calculator-app-10.vercel.app/]
 
 ### Built with
 

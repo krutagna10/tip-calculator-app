@@ -1,0 +1,10 @@
+.primary-heading {
+  font-size: var(--font-size-500);
+  color: var(--very-dark-cyan);
+  text-align: center;
+  letter-spacing: 0.6rem;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space);
+}

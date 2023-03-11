@@ -1,0 +1,35 @@
+//@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+:root {
+   // Colors
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --very-light-grayish-cyan: hsl(180, 27%, 94%);
+  --white: hsl(0, 0%, 100%);
+  --disabled-button-color: hsla(183, 100%, 15%, 0.657);
+
+   // Typography
+  --font-space-mono: 'Space Mono', monospace;;
+  --font-weight-bold: 700;
+
+  --font-size-100: 0.8125rem;
+  --font-size-200: 0.875rem;
+  --font-size-300: 1.25rem;
+  --font-size-400: 1.5rem;
+  --font-size-500: 1.75rem;
+  --font-size-600: 2.5rem;
+  --font-size-700: 2rem;
+
+  // Spacing
+  --flow-space: 1rem;
+  --gap: 1rem;
+}
+
+@media (min-width: 48em) {
+  :root {
+    --font-size-700: 3rem;
+  }
+}

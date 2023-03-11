@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/script.js"></script>
+    <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+<main>
+    <section class="bill-section">
+        <div class="bill__heading-wrapper">
+            <h1 class="bill__heading primary-heading">SPLI <br> TTER</h1>
+        </div>
+
+        <div class="bill container grid grid--2-columns">
+            <div class="bill__column-input flow">
+                <div class="bill__user-input">
+                    <div class="bill__label-wrapper flex">
+                        <label class="bill__input-label" for="bill__input">Bill</label>
+                        <span class="bill__error-message bill__error-message--input">Bill cannot be negative</span>
+                    </div>
+                    <div class="bill__input-wrapper">
+                        <input type="number"
+                               name="bill-input"
+                               id="bill__input"
+                        />
+                        <img class="bill__input-icon"
+                             src="images/icon-dollar.svg"
+                             alt=""
+                             aria-hidden="true"
+                        />
+                    </div>
+                </div>
+
+                <div class="bill__tip">
+                    <p class="bill__tip-label">Select tip %</p>
+
+                    <div class="bill__tip-button-wrapper grid grid--3-columns">
+                        <button class="bill__tip-btn" data-tip="5">
+                            5%
+                        </button>
+                        <button class="bill__tip-btn" data-tip="10">
+                            10%
+                        </button>
+                        <button class="bill__tip-btn current-active" data-tip="15">
+                            15%
+                        </button>
+                        <button class="bill__tip-btn" data-tip="25">
+                            25%
+                        </button>
+                        <button class="bill__tip-btn" data-tip="50">
+                            50%
+                        </button>
+
+                        <label>
+                            <input type="number"
+                                   placeholder="Custom"
+                                   name="custom-tip"
+                                   id="bill__custom-tip"
+                            />
+                        </label>
+                    </div>
+                </div>
+
+                <div class="bill__people">
+                    <div class="bill__people-label-wrapper flex">
+                        <label class="bill__input-label" for="bill__people-input">Number of People</label>
+                        <span class="bill__error-message bill__error-message--people">Can't be zero</span>
+                    </div>
+                    <div class="bill__people-input-wrapper">
+                        <input type="number" name="number-input" id="bill__people-input">
+                        <img class="bill__input-icon" src="images/icon-person.svg" alt="Person logo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="bill__column-amount flow">
+                <div class="bill__amount-wrapper bill__amount-wrapper--tip flex">
+                    <div class="bill__amount-description">
+                        <p class="bill__text--amount">Tip Amount</p>
+                        <p class="bill__text--person">/ person</p>
+                    </div>
+                    <p class="bill__amount-label">$<span class="bill__amount-tip">4.27</span></p>
+                </div>
+                <div class="bill__amount-wrapper bill__amount-wrapper--total flex">
+                    <div class="bill__amount-description">
+                        <p class="bill__text--amount">Total</p>
+                        <p class="bill__text--person">/ person</p>
+                    </div>
+                    <p class="bill__amount-label">$<span class="bill__amount-total">32.79</span></p>
+                </div>
+                <button class="bill__btn-reset">Reset</button>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+</body>
+
+</html>
